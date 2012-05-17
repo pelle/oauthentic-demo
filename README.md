@@ -4,6 +4,8 @@ A demo of [oauthentic](http://github.com/pelle/oauthentic) the light weight easy
 
 This currently logs in via GitHub. It should be easy to customize it to any other OAuth 2 app.
 
+[Access Demo](http://oauthentic.herokuapp.com/)
+
 ## Usage
 
 You need to [register an application](https://github.com/settings/applications/new) first at GitHub.

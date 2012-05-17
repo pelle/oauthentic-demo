@@ -11,10 +11,17 @@
          (common/layout
            [:div 
             [:h1 "Welcome to oauthentic-demo"]
-              (if-let [user (s/get :user)]
-                [:div [:p (str "Hello, " (:name user))]
-                  [:a {:href "/logout"} "Logout"]]
-                [:a {:href "/github"} "Login with Github"])]
+            (if-let [user (s/get :user)]
+              [:div [:p (str "Hello, " (:name user))]
+                [:a {:href "/logout"} "Logout"]]
+              [:a {:href "/github"} "Login with Github"])
+
+            [:p
+              [:a {:href "https://github.com/pelle/oauthentic-demo"} "Source code for Demo"]]
+            [:p 
+              [:a {:href "https://github.com/pelle/oauthentic"} "oauthentic at GitHub"]]
+            ]
+
            )))
 
 (defpage "/logout" []

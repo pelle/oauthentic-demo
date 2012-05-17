@@ -6,7 +6,7 @@
             (html5
               [:head
                [:title "oauthentic-demo"]
-               (include-css "/css/reset.css")]
+               ]
               [:body
                [:div#wrapper
                 content]]))
